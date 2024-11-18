@@ -1,9 +1,9 @@
 #ifndef classes
 #define classes
 
-#include <SDL.h>
-#include <SDL_image.h>
-#include <graphics.h>
+#include <SDL3/SDL.h>
+#include <SDL3_image/SDL_image.h>
+//#include <graphics.h>
 #include <time.h>
 #include <ctime>
 #include <vector>
@@ -25,7 +25,7 @@ class palya
 {
 public:
     rune_stone elemek[5][6];
-    SDL_Rect elemek_helye[5][6];
+    SDL_FRect elemek_helye[5][6];
     short int starta, startb;
     short int folyamat;
     short int combo_num;
